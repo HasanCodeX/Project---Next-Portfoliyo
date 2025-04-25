@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <div >
       <main >
+    
         <Banner />
         <About />
         <ProjectSection />
