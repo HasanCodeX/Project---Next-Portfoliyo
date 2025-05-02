@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/Components/navbar";
 import Footer from "@/Components/footer";
 
-// Load the Geist and Geist_Mono fonts (optional, for specific elements)
+// Load the fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,21 +16,13 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Mehedi Portfoliyo",
-  description: "Work with me !",
+  description: "Work with me!",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      {/* Link to Michroma font */}
-      <link
-        href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
-        rel="stylesheet"
-      />
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{ fontFamily: 'Michroma, var(--font-geist-sans), sans-serif' }} // Apply Michroma as the default
-      >
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <Navbar />
         {children}
         <Footer />
