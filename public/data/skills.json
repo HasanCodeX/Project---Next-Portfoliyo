@@ -1,0 +1,13 @@
+[
+    { "name": "MongoDB", "icon": "SiMongodb" },
+    { "name": "Express.js", "icon": "SiExpress" },
+    { "name": "React.js", "icon": "FaReact" },
+    { "name": "Node.js", "icon": "FaNodeJs" },
+    { "name": "JavaScript", "icon": "FaJsSquare" },
+    { "name": "Firebase", "icon": "SiFirebase" },
+    { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+    { "name": "Bootstrap", "icon": "SiBootstrap" },
+    { "name": "Git", "icon": "FaGitAlt" },
+    { "name": "HTML & CSS", "icon": "FaHtml5" }
+  ]
+  

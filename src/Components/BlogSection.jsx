@@ -1,43 +1,51 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const BlogSection = () => {
   const [expandedBlog, setExpandedBlog] = useState(null);
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const blogs = [
-    { 
-      id: "01", 
-      title: "Getting Started with React", 
-      icon: "https://cdn-icons-png.flaticon.com/512/875/875209.png", 
-      description: "A beginner's guide to understanding and using React.js effectively.",
-      fullContent: "React is a popular JavaScript library for building user interfaces. It helps developers create fast and scalable applications using a component-based architecture."
-    },
-    { 
-      id: "02", 
-      title: "Mastering Tailwind CSS", 
-      icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg", 
-      description: "Learn how to build beautiful and responsive UIs with Tailwind CSS.",
-      fullContent: "Tailwind CSS is a utility-first CSS framework that enables developers to create stunning designs with minimal effort."
-    },
-    { 
-      id: "03", 
-      title: "JavaScript DOM Manipulation", 
-      icon: "https://cdn-icons-png.flaticon.com/512/732/732212.png", 
-      description: "Understand how to dynamically update and modify your web pages using JavaScript DOM.",
-      fullContent: "JavaScript DOM manipulation allows developers to update and interact with elements on a webpage dynamically."
-    },
-    { 
-      id: "04", 
-      title: "Optimizing Web Performance", 
-      icon: "https://cdn-icons-png.flaticon.com/512/846/846486.png", 
-      description: "Boost the speed and efficiency of your websites with performance optimization techniques.",
-      fullContent: "Optimizing web performance involves techniques like lazy loading, caching, and minifying assets to enhance the user experience."
-    },
-  ];
+  // Fetch data when the component mounts
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch('/data/blogs.json'); // Adjust the path if needed
+        if (!response.ok) {
+          throw new Error('Failed to fetch blogs');
+        }
+        const data = await response.json();
+        setBlogs(data);
+        setLoading(false);
+      } catch (error) {
+        setError(error.message);
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
 
   const toggleReadMore = (id) => {
     setExpandedBlog(expandedBlog === id ? null : id);
   };
+
+  if (loading) {
+    return (
+      <div className="text-center text-white">
+        <p>Loading blogs...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-center text-white">
+        <p>Error loading blogs: {error}</p>
+      </div>
+    );
+  }
 
   return (
     <div id="Blogs" className="w-full py-16 bg-[#0A0F1F] flex flex-col items-center px-4">

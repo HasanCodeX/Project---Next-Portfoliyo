@@ -1,0 +1,35 @@
+[
+    { 
+      "id": "01", 
+      "name": "Pet House", 
+      "logo": "https://cdn-icons-png.flaticon.com/512/616/616430.png", 
+      "description": "The most expanded application I had the opportunity to work on. My code was reviewed by an awesome curator. The application handles all adoption processes and allows storing all evidence on adopting animals from the animal shelter.",
+      "liveLink": "https://github.com/HasanCodeX/web-b11-A3",
+      "githubLink": "https://github.com/HasanCodeX/web-b11-A3"
+    },
+    { 
+      "id": "02", 
+      "name": "Kids School", 
+      "logo": "https://cdn-icons-png.flaticon.com/512/3202/3202926.png", 
+      "description": "Personal project for a study subject. I've earned an A+ grade :)",
+      "liveLink": "https://github.com/HasanCodeX/web-b11-A2",
+      "githubLink": "https://github.com/HasanCodeX/web-b11-A2"
+    },
+    { 
+      "id": "03", 
+      "name": "Bangladesh 2.0", 
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg", 
+      "description": "A comprehensive project aimed at showcasing the beauty and culture of Bangladesh. This project involved creating an interactive and visually appealing website using modern web technologies. It was a great learning experience in web development and design.",
+      "liveLink": "https://github.com/HasanCodeX/web-b11-A1",
+      "githubLink": "https://github.com/HasanCodeX/web-b11-A1"
+    },
+    { 
+      "id": "04", 
+      "name": "English Janala", 
+      "logo": "https://cdn-icons-png.flaticon.com/512/2795/2795731.png", 
+      "description": "A web application to help users learn English efficiently through interactive exercises and lessons. Built with modern frontend technologies for a seamless learning experience.",
+      "liveLink": "https://github.com/HasanCodeX/english-janala",
+      "githubLink": "https://github.com/HasanCodeX/english-janala"
+    }
+  ]
+  
