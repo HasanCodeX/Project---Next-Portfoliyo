@@ -20,7 +20,7 @@ export default function Sidebar() {
 
       <h1 className="text-2xl  text-blue-400 md:text-3xl font-bold mt-4 ">Mehedi Hasan</h1>
 
-      <div className="flex justify-center mt-4">
+      {/* <div className="flex justify-center mt-4">
         <Image
           src=""
           alt="profile"
@@ -28,7 +28,16 @@ export default function Sidebar() {
           height={100}
           className="rounded-full border-4 border-white shadow-md"
         />
-      </div>
+      </div> */}
+      <div className="flex justify-center mt-4">
+          <img
+            src="https://i.ibb.co/7B9C5dN/1742086607598.jpg"
+            alt="profile"
+            width={100}
+            height={100}
+            className="rounded-full border-4 border-white shadow-md"
+          />
+        </div>
 
       <div className="flex items-center justify-center gap-1 text-sm text-gray-600 mt-2 ">
         <Mail size={14} />
