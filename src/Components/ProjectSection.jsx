@@ -44,7 +44,8 @@ const ProjectSection = () => {
   }
 
   return (
-    <div id="projects" className="w-full bg-[#0A0F1F] flex flex-col items-center px-6 py-16">
+    <div id="projects" className="ml-48
+    w-full bg-[#0A0F1F] flex flex-col items-center px-6 py-16">
       <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text uppercase tracking-wide mb-4 mt-4 text-center">
         My Projects
       </h2>

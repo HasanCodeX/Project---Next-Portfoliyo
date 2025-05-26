@@ -20,7 +20,7 @@ const About = () => {
         About Me
       </h2>
 
-      <div className="mx-auto flex flex-col md:flex-row items-stretch justify-center gap-8 max-w-7xl px-6">
+      <div className="ml-124 mx-auto flex flex-col md:flex-row items-stretch justify-center gap-8 max-w-7xl px-6">
         {/* Profile Image and Icons */}
         <div className="flex-1 bg-[#0D1326] p-6 rounded-lg shadow-lg flex flex-col items-center min-h-[416px]">
           <img

@@ -60,7 +60,7 @@ const SkillSection = () => {
   }
 
   return (
-    <div id="skills" className="w-full py-12 md:py-16 bg-[#0A0F1F] flex flex-col items-center">
+    <div id="skills" className="w-full ml-48 py-12 md:py-16 bg-[#0A0F1F] flex flex-col items-center">
       <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text uppercase tracking-wide mb-4 mt-4 text-center">
         My Skills
       </h2>

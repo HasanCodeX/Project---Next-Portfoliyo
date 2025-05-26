@@ -44,7 +44,7 @@ const ContactSection = () => {
   }
 
   return (
-    <section id="contacts" className="bg-[#0A0F1F] p-6 text-white px-6 py-16">
+    <section id="contacts" className="ml-96 bg-[#0A0F1F] p-6 text-white px-6 py-16">
       <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text uppercase tracking-wide mb-4 mt-4 text-center">
         Get in Touch
       </h2>

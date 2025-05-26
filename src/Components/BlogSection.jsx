@@ -48,7 +48,7 @@ const BlogSection = () => {
   }
 
   return (
-    <div id="Blogs" className="w-full py-16 bg-[#0A0F1F] flex flex-col items-center px-4">
+    <div id="Blogs" className="ml-48 w-full py-16 bg-[#0A0F1F] flex flex-col items-center px-4">
       <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text uppercase tracking-wide mb-4 mt-4 text-center">
         My Blogs
       </h2>
