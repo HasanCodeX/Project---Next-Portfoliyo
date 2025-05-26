@@ -11,7 +11,7 @@ import {
 
 export default function Sidebar() {
   return (
-    <div className="bg-[#0a0f1c] text-center p-4 w-full max-w-xs mx-auto shadow-lg rounded-xl fixed md:fixed top-0 left-0 h-screen md:w-60 md:pt-8 overflow-y-auto z-50 border-r border-blue-600 border-b border-t">
+    <div className="bg-[#0a0f1c] text-center p-4 w-full max-w-sm mx-auto shadow-lg rounded-xl fixed md:fixed top-0 left-0 h-screen md:w-90 md:pt-8 overflow-y-auto z-50 border-r border-blue-600 border-b border-t">
       <div className="space-y-2 text-sm md:text-base">
         <p className="text-gray-500"># programmer_life</p>
         <p className="text-gray-500"># hello_world</p>
@@ -33,7 +33,7 @@ export default function Sidebar() {
           <img
             src="https://i.ibb.co/7B9C5dN/1742086607598.jpg"
             alt="profile"
-            width={100}
+            width={300}
             height={100}
             className="rounded-full border-4 border-white shadow-md"
           />
