@@ -1,101 +1,76 @@
 "use client";
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
-import About from "./about";
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+import Image from "next/image";
+import { Mail } from "lucide-react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-    return () => document.body.classList.remove("overflow-hidden");
-  }, [isOpen]);
-
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-      setIsOpen(false);
-    }
-  };
-
+export default function Sidebar() {
   return (
-    <nav className="border border-white bg-[#0D1326] mt-6 rounded-4xl max-w-7xl w-full py-4 fixed top-0 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-center px-6 md:px-20 shadow-md">
-
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden text-gray-400 absolute left-6 z-50 "
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        {isOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
-
-      {/* Navigation Menu */}
-
-      <div className="relative flex items-center justify-center w-full">
-        <ul
-          className={`absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-[#0A0F1F] md:bg-transparent flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-16 text-gray-400 uppercase text-sm tracking-widest font-semibold transition-all duration-300 ease-in-out ${
-            isOpen ? "flex" : "hidden"
-          } md:flex`}
-        >
-          <li
-            className="hover:text-orange-400 cursor-pointer"
-            onClick={() => scrollToSection("home")}
-          >
-            Home
-          </li>
-          <li
-            className="hover:text-orange-400 cursor-pointer"
-            onClick={() => scrollToSection("about")}
-          >
-            About
-          </li>
-          <li
-            className="hover:text-orange-400 cursor-pointer"
-            onClick={() => scrollToSection("skills")}
-          >
-            skills
-          </li>
-          
-         
-<li className="hover:text-orange-400 cursor-pointer hidden md:block">
-  <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </pre>
-</li>
-
-
-
-
-
-
-          <li
-            className="hover:text-orange-400 cursor-pointer"
-            onClick={() => scrollToSection("projects")}
-          >
-            Projects
-          </li>
-          <li
-            className="hover:text-orange-400 cursor-pointer"
-            onClick={() => scrollToSection("Blogs")}
-          >
-            Blogs
-          </li>
-          <li
-            className="hover:text-orange-400 cursor-pointer"
-            onClick={() => scrollToSection("contacts")}
-          >
-            Contacts
-          </li>
-        </ul>
-
-        {/* Always Centered Logo */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 text-4xl font-bold text-blue-400">
-          MH
-        </div>
+    <div className="bg-[#0a0f1c] text-center p-4 w-full max-w-xs mx-auto shadow-lg rounded-xl fixed md:fixed top-0 left-0 h-screen md:w-60 md:pt-8 overflow-y-auto z-50 border-r border-blue-600 border-b border-t">
+      <div className="space-y-2 text-sm md:text-base">
+        <p className="text-gray-500"># programmer_life</p>
+        <p className="text-gray-500"># hello_world</p>
+        <p className="text-gray-500"># coding</p>
       </div>
-    </nav>
+
+      <h1 className="text-2xl  text-blue-400 md:text-3xl font-bold mt-4 ">Mehedi Hasan</h1>
+
+      <div className="flex justify-center mt-4">
+        <Image
+          src=""
+          alt="profile"
+          width={100}
+          height={100}
+          className="rounded-full border-4 border-white shadow-md"
+        />
+      </div>
+
+      <div className="flex items-center justify-center gap-1 text-sm text-gray-600 mt-2 ">
+        <Mail size={14} />
+        <p className=" text-blue-600">dev.hasan10@gmail.com</p>
+      </div>
+
+      <div className="space-y-2 mt-6 text-gray-700 font-medium ">
+        <p className="cursor-pointer  text-blue-400 hover:text-blue-600">About</p>
+        <p className="cursor-pointer  text-blue-400 hover:text-blue-600">Projects</p>
+        <p className="cursor-pointer  text-blue-400 hover:text-blue-600">Blogs</p>
+        <p className="cursor-pointer  text-blue-400 hover:text-blue-600">skills</p>
+        <p className="cursor-pointer  text-blue-400 hover:text-blue-600">Contact</p>
+       
+      </div>
+
+      <div className="flex flex-col items-center mt-6 space-y-4">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <FaGithub size={24} className="hover:text-black" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin size={24} className="hover:text-blue-600" />
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+          <FaXTwitter size={24} className="hover:text-black" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={24} className="hover:text-pink-500" />
+        </a>
+        <a href="mailto:mittalsam98@gmail.com">
+          <Mail size={24} className="hover:text-red-500" />
+        </a>
+      </div>
+
+<br />
+
+
+<div className="bg-gray-900 p-4 rounded-lg flex justify-center items-center">
+        <span className="text-4xl font-bold text-blue-400">MH</span>
+      </div>
+      <p className="text-gray-500 text-xs mt-4">
+        2024 COPYRIGHT | MEHEDI HASAN | ALL RIGHTS RESERVED
+      </p>
+    </div>
   );
 }
