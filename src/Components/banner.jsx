@@ -18,7 +18,7 @@ export default function Banner() {
   return (
     <div
       id="home"
-      className="ml-88 relative min-h-screen bg-[#0A0F1F] flex items-center justify-center text-white"
+      className="ml-80 relative min-h-screen bg-[#0A0F1F] flex items-center justify-center text-white"
     >
       <div className="text-center">
         <div className="relative w-64 h-64 mx-auto">

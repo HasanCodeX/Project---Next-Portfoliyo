@@ -11,7 +11,7 @@ import {
 
 export default function Sidebar() {
   return (
-    <div className="bg-[#0a0f1c] text-center p-4 w-full max-w-sm mx-auto shadow-lg rounded-xl fixed md:fixed top-0 left-0 h-screen md:w-90 md:pt-8 overflow-y-auto z-50 border-r border-blue-600 border-b border-t">
+    <div className="bg-[#0a0f1c] text-center p-4 w-full max-w-sm mx-auto shadow-lg rounded-xl fixed md:fixed top-0 left-0 h-screen md:w-80 md:pt-8 overflow-y-auto z-50 border-r border-blue-600 border-b border-t">
       <div className="space-y-2 text-sm md:text-base">
         <p className="text-gray-500"># programmer_life</p>
         <p className="text-gray-500"># hello_world</p>
@@ -74,12 +74,12 @@ export default function Sidebar() {
 <br />
 
 
-<div className="bg-gray-900 p-4 rounded-lg flex justify-center items-center">
+{/* <div className="bg-gray-900 p-4 rounded-lg flex justify-center items-center">
         <span className="text-4xl font-bold text-blue-400">MH</span>
-      </div>
-      <p className="text-gray-500 text-xs mt-4">
+      </div> */}
+      {/* <p className="text-gray-500 text-xs mt-4">
         2024 COPYRIGHT | MEHEDI HASAN | ALL RIGHTS RESERVED
-      </p>
+      </p> */}
     </div>
   );
 }
